@@ -65,5 +65,4 @@ def organize_schools(schools)
     end
   end
   organized_schools
-  binding.pry
 end
