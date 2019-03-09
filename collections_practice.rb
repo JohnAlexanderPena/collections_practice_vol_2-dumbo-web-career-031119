@@ -1,3 +1,4 @@
+require "pry"
 def begins_with_r(array)
   if array.all? {|word| word.start_with?("r")}
     true 
@@ -57,6 +58,7 @@ def organize_schools(schools)
   schools.each do |name, location_hash|
     location = location_hash[:location]
     if organized_schools[location]
+      binding.pry
       organized_schools[location] << name
     else
       organized_schools[location] = []
