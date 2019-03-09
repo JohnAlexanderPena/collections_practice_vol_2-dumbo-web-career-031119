@@ -58,8 +58,8 @@ def organize_schools(schools)
   schools.each do |name, location_hash|
     location = location_hash[:location]
     if organized_schools[location]
-      binding.pry
       organized_schools[location] << name
+      binding.pry
     else
       organized_schools[location] = []
       organized_schools[location] << name
