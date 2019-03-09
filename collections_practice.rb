@@ -61,9 +61,9 @@ def organize_schools(schools)
       organized_schools[location] << name
     else
       organized_schools[location] = []
-      binding.pry
       organized_schools[location] << name
     end
   end
   organized_schools
+  binding.pry
 end
